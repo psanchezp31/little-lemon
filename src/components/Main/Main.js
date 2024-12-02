@@ -1,5 +1,13 @@
+import HighlightedPublications from "../HighlightedPublications/HighlightedPublications";
+import Testimonials from "../Testimonials/Testimonials";
+
 const Main = () => {
-    return <main></main>;
-  };
-  
-  export default Main;
+  return (
+    <main>
+      <HighlightedPublications />
+      <Testimonials/>
+    </main>
+  );
+};
+
+export default Main;
