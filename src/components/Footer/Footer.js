@@ -1,12 +1,16 @@
-import Facebook from "../utils/Facebook";
-import Instagram from "../utils/Instagram";
-import Tiktok from "../utils/Tiktok";
-import NavigationLinks from "./NavigationLinks";
+import Facebook from "../../utils/Facebook";
+import Instagram from "../../utils/Instagram";
+import Tiktok from "../../utils/Tiktok";
+import NavigationLinks from "../NavigationLinks/NavigationLinks";
+import "./footer.scss";
 
 const Footer = () => {
+  const color = {
+    background: "blue",
+  };
   return (
-    <footer>
-      <div className="footer-wrapper">
+    <footer className="ui-core-footer">
+      <div className="ui-core-footer">
         <div className="logo">
           <a href="https://www.littlelemon.com">
             <img
@@ -26,13 +30,13 @@ const Footer = () => {
           Follow us:
           <div className="social-icons">
             <a href="http://littlelemon.com/instagram">
-                <Instagram />
+              <Instagram />
             </a>
             <a href="http://littlelemon.com/facebook">
-                <Facebook />
+              <Facebook />
             </a>
             <a href="http://littlelemon.com/tiktok">
-                <Tiktok />
+              <Tiktok />
             </a>
           </div>
         </div>

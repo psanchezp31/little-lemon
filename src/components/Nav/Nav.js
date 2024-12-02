@@ -1,4 +1,4 @@
-import NavigationLinks from "./NavigationLinks";
+import NavigationLinks from "../NavigationLinks/NavigationLinks";
 
 const Nav = () => {
   return (
