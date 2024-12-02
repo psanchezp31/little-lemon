@@ -3,18 +3,16 @@ import Instagram from "../../utils/Instagram";
 import Tiktok from "../../utils/Tiktok";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import "./footer.scss";
+import VerticalLogo from '../../images/little-lemon-vertical.jpg'
 
 const Footer = () => {
-  const color = {
-    background: "blue",
-  };
   return (
     <footer className="ui-core-footer">
       <div className="ui-core-footer">
         <div className="logo">
           <a href="https://www.littlelemon.com">
             <img
-              src="../images/little-lemon-vertical"
+              src={VerticalLogo}
               alt="Little Lemon Vertical Logo"
             />
           </a>

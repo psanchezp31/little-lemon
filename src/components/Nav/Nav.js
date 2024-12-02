@@ -1,15 +1,19 @@
-import NavigationLinks from "../NavigationLinks/NavigationLinks";
+import NavDesktop from "../NavDesktop/NavDesktop";
+import NavMobile from "../NavMobile/NavMobile";
+import "./nav.scss";
+
+const namespace = "ui-core-nav";
 
 const Nav = () => {
   return (
-    <nav>
-      <div className="logo">
-        <a href="https://www.littlelemon.com">
-          <img src="../images/Logo.svg" alt="Little Lemon Logo" />
-        </a>
+    <div className={namespace}>
+      <div className={`${namespace}--mobile`}>
+        <NavMobile />
       </div>
-      <NavigationLinks/>
-    </nav>
+      <div className={`${namespace}--desktop`}>
+        <NavDesktop />
+      </div>
+    </div>
   );
 };
 

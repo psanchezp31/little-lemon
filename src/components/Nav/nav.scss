@@ -1,0 +1,15 @@
+$namespace: "ui-core-nav";
+
+.#{$namespace} {
+  @media (max-width: 768px) {
+    &--desktop{
+      display: none;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &--mobile {
+      display: none;
+    }
+  }
+}
