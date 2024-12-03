@@ -1,4 +1,4 @@
-import './styles.scss';
+import "../src/styles/index.scss";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import Main from "./components/Main/Main";
@@ -6,8 +6,8 @@ import Main from "./components/Main/Main";
 function App() {
   return (
     <>
-      <Header/>
-      <Main/>
+      <Header />
+      <Main />
       <Footer />
     </>
   );

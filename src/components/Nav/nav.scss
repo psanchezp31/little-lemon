@@ -1,4 +1,5 @@
 $namespace: "ui-core-nav";
+@use '../NavMobile/navMobile.scss';
 
 .#{$namespace} {
   @media (max-width: 768px) {

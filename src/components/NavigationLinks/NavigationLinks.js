@@ -1,3 +1,5 @@
+import './navigationLinks.scss'
+
 const NavigationLinks = () => {
   return (
     <div className="links">
