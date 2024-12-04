@@ -3,19 +3,17 @@ import Instagram from "../../utils/Instagram";
 import Tiktok from "../../utils/Tiktok";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import "./footer.scss";
-import VerticalLogo from '../../images/little-lemon-vertical.jpg'
+import VerticalLogo from "../../images/little-lemon-vertical.jpg";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer className="ui-core-footer">
       <div className="ui-core-footer">
         <div className="logo">
-          <a href="https://www.littlelemon.com">
-            <img
-              src={VerticalLogo}
-              alt="Little Lemon Vertical Logo"
-            />
-          </a>
+          <Link to="/">
+            <img src={VerticalLogo} alt="Little Lemon Vertical Logo" />
+          </Link>
         </div>
         <div className="navigation">
           <NavigationLinks />

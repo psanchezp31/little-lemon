@@ -1,6 +1,7 @@
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
-import Logo from '../../images/Logo.svg'
-import './navDesktop.scss';
+import Logo from "../../images/Logo.svg";
+import "./navDesktop.scss";
+import { Link } from "react-router-dom";
 
 const namespace = "ui-core-nav--desktop";
 
@@ -8,10 +9,10 @@ const NavDesktop = () => {
   return (
     <nav>
       <div className={namespace}>
-        <a href="https://www.littlelemon.com">
+        <Link to="/">
           <img src={Logo} alt="Little Lemon Logo" />
-        </a>
-      <NavigationLinks/>
+        </Link>
+        <NavigationLinks />
       </div>
     </nav>
   );

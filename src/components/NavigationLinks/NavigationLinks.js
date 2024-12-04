@@ -1,26 +1,39 @@
-import './navigationLinks.scss'
+import { NavLink } from "react-router-dom";
+import "./navigationLinks.scss";
 
 const NavigationLinks = () => {
   return (
     <div className="links">
       <ul>
         <li>
-          <a href="http://">Home</a>
+          <NavLink to="/" activeClassName="active">
+            Home
+          </NavLink>
         </li>
         <li>
-          <a href="http://">About</a>
+          <NavLink to="/about" activeClassName="active">
+            About
+          </NavLink>
         </li>
         <li>
-          <a href="http://">Menu</a>
+          <NavLink to="/menu" activeClassName="active">
+            Menu
+          </NavLink>
         </li>
         <li>
-          <a href="http://">Reservations</a>
+          <NavLink to="/reservations" activeClassName="active">
+            Reservations
+          </NavLink>
         </li>
         <li>
-          <a href="http://">Order Online</a>
+          <NavLink to="/orders" activeClassName="active">
+            Order Online
+          </NavLink>
         </li>
         <li>
-          <a href="http://">Login</a>
+          <NavLink to="/login" activeClassName="active">
+            Login
+          </NavLink>
         </li>
       </ul>
     </div>
