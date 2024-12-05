@@ -1,12 +1,15 @@
 import HighlightedPublications from "../HighlightedPublications/HighlightedPublications";
+import Intro from "../Intro/Intro";
 import Testimonials from "../Testimonials/Testimonials";
 
 const Home = () => {
-  <div>
-    holaa
-    <HighlightedPublications />
-    <Testimonials />
-  </div>;
+  return (
+    <div>
+      <Intro />
+      <HighlightedPublications />
+      <Testimonials />
+    </div>
+  );
 };
 
 export default Home;

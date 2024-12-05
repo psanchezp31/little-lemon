@@ -37,6 +37,6 @@ nav {
 @media (min-width: 991px) {
   .#{$namespace},
   nav {
-    padding: $spacing-16 $spacing-24;
+    padding: $spacing-16 0;
   }
 }
