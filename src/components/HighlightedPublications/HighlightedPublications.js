@@ -3,6 +3,7 @@ import bruchetta from "../../images/bruchetta.svg";
 import lemonDessert from "../../images/lemon dessert.jpg";
 import Card from "../Card/Card";
 import "./highlighted-publications.scss";
+import { Link } from "react-router-dom";
 
 const HighlightedPublications = () => {
   const cardsContent = [
@@ -33,17 +34,21 @@ const HighlightedPublications = () => {
   ];
 
   return (
-    <>
+    <div className="highlighted-publications-wrapper">
       <div className="header">
         <div className="title">This Week Specials</div>
-        <button>Menu</button>
-        <div className="cards">
-          {cardsContent.map((card) => (
-            <Card key={card.title} {...card} />
-          ))}
+        <div className="button">
+          <Link to="/menu" className="menu-button">
+            Menu
+          </Link>
         </div>
       </div>
-    </>
+      <div className="cards">
+        {cardsContent.map((card) => (
+          <Card key={card.title} {...card} />
+        ))}
+      </div>
+    </div>
   );
 };
 
