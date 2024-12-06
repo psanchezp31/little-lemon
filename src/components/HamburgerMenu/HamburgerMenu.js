@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./hamburgerMenu.scss";
+import "./hamburger-menu.scss";
 import Menu from "../../utils/Menu";
 import Close from "../../utils/Close";
 

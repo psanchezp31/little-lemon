@@ -1,6 +1,6 @@
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import Logo from "../../images/Logo.svg";
-import "./navDesktop.scss";
+import "./nav-desktop.scss";
 import { Link } from "react-router-dom";
 import classNames from "classnames";
 

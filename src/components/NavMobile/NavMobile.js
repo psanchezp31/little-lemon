@@ -1,7 +1,7 @@
 import classNames from "classnames";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
-import "./navMobile.scss";
+import "./nav-mobile.scss";
 
 const NavMobile = ({ namespace }) => {
   return (
