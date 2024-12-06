@@ -1,6 +1,6 @@
-import "./card.scss";
+import "./publication-card.scss";
 
-const Card = ({ image, title, price, description, buttonText }) => {
+const PublicationCard = ({ image, title, price, description, buttonText }) => {
   return (
     <>
       <div className="card-wrapper">
@@ -20,4 +20,4 @@ const Card = ({ image, title, price, description, buttonText }) => {
   );
 };
 
-export default Card;
+export default PublicationCard;

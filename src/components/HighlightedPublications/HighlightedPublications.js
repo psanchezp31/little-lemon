@@ -1,9 +1,9 @@
 import greekSalad from "../../images/greek salad.jpg";
 import bruchetta from "../../images/bruchetta.svg";
 import lemonDessert from "../../images/lemon dessert.jpg";
-import Card from "../Card/Card";
 import "./highlighted-publications.scss";
 import { Link } from "react-router-dom";
+import PublicationCard from "../PublicationCard/PublicationCard";
 
 const HighlightedPublications = () => {
   const cardsContent = [
@@ -45,7 +45,7 @@ const HighlightedPublications = () => {
       </div>
       <div className="cards">
         {cardsContent.map((card) => (
-          <Card key={card.title} {...card} />
+          <PublicationCard key={card.title} {...card} />
         ))}
       </div>
     </div>
