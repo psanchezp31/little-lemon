@@ -1,12 +1,23 @@
 @import "../../styles/index.scss";
 
-.intro-container {
-  position: absolute;
-  background-color: $primary-100;
-  padding: $spacing-16 $spacing-24;
-  top: 0;
-  left: -($spacing-24);
-  right: -($spacing-24);
+.intro-wrapper {
+  position: relative;
+
+  .intro-container {
+    position: relative;
+    padding: $spacing-16 $spacing-24;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: -($spacing-24);
+      right: -($spacing-24);
+      bottom: 0;
+      background-color: $primary-100;
+      z-index: -1;
+    }
+  }
 
   .title,
   .city {
@@ -51,17 +62,13 @@
       background-color: darken($primary-80, 10%);
     }
   }
-}
-
-.intro-wrapper {
-  position: relative;
 
   .image {
     display: none;
   }
 
   @media (min-width: $breakpoint-mobile) {
-    display: flex;
+    margin-bottom: 500px;
 
     .image {
       display: flex;
@@ -74,6 +81,10 @@
       & img {
         border-radius: $spacing-16;
       }
+    }
+
+    .description {
+      width: 500px;
     }
   }
 }

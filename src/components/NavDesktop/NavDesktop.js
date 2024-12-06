@@ -2,13 +2,12 @@ import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import Logo from "../../images/Logo.svg";
 import "./navDesktop.scss";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 
-const namespace = "ui-core-nav--desktop";
-
-const NavDesktop = () => {
+const NavDesktop = ({ namespace }) => {
   return (
     <nav>
-      <div className={namespace}>
+      <div className={classNames(`${namespace}--desktop`)}>
         <Link to="/">
           <img src={Logo} alt="Little Lemon Logo" />
         </Link>

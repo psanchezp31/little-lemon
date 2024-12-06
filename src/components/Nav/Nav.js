@@ -1,17 +1,18 @@
 import NavDesktop from "../NavDesktop/NavDesktop";
 import NavMobile from "../NavMobile/NavMobile";
+import classNames from "classnames";
 import "./nav.scss";
 
 const namespace = "ui-core-nav";
 
 const Nav = () => {
   return (
-    <div className={namespace}>
-      <div className={`${namespace}--mobile`}>
-        <NavMobile />
+    <div className={classNames(namespace)}>
+      <div className="mobile">
+        <NavMobile namespace={namespace} />
       </div>
-      <div className={`${namespace}--desktop`}>
-        <NavDesktop />
+      <div className="desktop">
+        <NavDesktop namespace={namespace} />
       </div>
     </div>
   );

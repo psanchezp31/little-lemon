@@ -1,7 +1,9 @@
+@import "../../styles/index.scss";
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 8px 24px;
+  padding: $spacing-24;
   height: 100%;
   display: flex;
   justify-content: space-between;

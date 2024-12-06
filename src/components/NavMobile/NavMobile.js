@@ -1,10 +1,11 @@
+import classNames from "classnames";
 import HamburgerMenu from "../HamburgerMenu/HamburgerMenu";
 import NavigationLinks from "../NavigationLinks/NavigationLinks";
 import "./navMobile.scss";
 
-const NavMobile = () => {
+const NavMobile = ({ namespace }) => {
   return (
-    <nav className="nav-mobile">
+    <nav className={classNames(`${namespace}--mobile`)}>
       <HamburgerMenu>
         <NavigationLinks />
       </HamburgerMenu>
