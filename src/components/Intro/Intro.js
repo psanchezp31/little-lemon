@@ -7,7 +7,7 @@ const Intro = () => {
     <div className="intro-wrapper">
       <div className="intro-container">
         <div className="content">
-          <div className="title">Little Lemon</div>
+          <h1 className="title">Little Lemon</h1>
           <div className="city">Chicago</div>
           <div className="description">
             We are a family owned Mediterranean restaurant, focused on

@@ -1,0 +1,7 @@
+@import "../../styles/index.scss";
+
+.cards {
+  display: flex;
+  gap: $spacing-16;
+  flex-direction: column;
+}
