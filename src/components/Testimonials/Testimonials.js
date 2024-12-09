@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import userAvatar from "../../images/user-avatar.png";
 import ReviewCard from "../ReviewCard/ReviewCard";
@@ -35,19 +36,43 @@ const Testimonials = () => {
     },
   ];
 
-  const slider = {
+  const [sliderSettings, setSliderSettings] = useState({
     dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-  };
+  });
+
+  useEffect(() => {
+    const updateSliderSettings = () => {
+      if (window.innerWidth >= 1024) {
+        setSliderSettings((prev) => ({
+          ...prev,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }));
+      } else {
+        setSliderSettings((prev) => ({
+          ...prev,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }));
+      }
+    };
+
+    updateSliderSettings();
+
+    window.addEventListener("resize", updateSliderSettings);
+
+    return () => window.removeEventListener("resize", updateSliderSettings);
+  }, []);
 
   return (
     <div className="testimonials-wrapper">
       <div className="title">What our customers say!</div>
       <div className="cards">
-        <Slider {...slider}>
+        <Slider {...sliderSettings}>
           {testimonialsContent.map((card, index) => (
             <ReviewCard {...card} key={index + 1} />
           ))}
