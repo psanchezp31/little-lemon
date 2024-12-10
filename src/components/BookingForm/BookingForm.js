@@ -130,7 +130,7 @@ const BookingForm = () => {
         <input
           className="submit-button"
           type="submit"
-          value="Make Your reservation"
+          value="Make your reservation"
         />
       </form>
       <ToastContainer />
