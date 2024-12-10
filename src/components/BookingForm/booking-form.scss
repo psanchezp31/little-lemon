@@ -2,6 +2,8 @@
 
 .form-wrapper {
   padding: $spacing-24;
+  display: flex;
+  justify-content: center;
 }
 
 .form,
@@ -13,6 +15,7 @@ input {
 .form {
   display: flex;
   flex-direction: column;
+  width: 100%;
   gap: $spacing-12;
 
   label {
@@ -48,6 +51,22 @@ input {
     &:hover {
       background-color: darken($primary-80, 10%);
       cursor: pointer;
+    }
+  }
+
+  .error {
+    color: #e74c3c;
+  }
+
+  @media (min-width: $breakpoint-mobile) {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: $breakpoint-mobile) {
+  .Toastify {
+    .notification {
+      width: 500px;
     }
   }
 }
