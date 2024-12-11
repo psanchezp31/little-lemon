@@ -34,12 +34,12 @@ const Footer = () => {
             <NavigationLinks />
           </div>
           <div className="contact">
-            <span class="address">9978 S 84TH TER PALOS HILLS</span>
-            <span class="address">IL 60465-8202 USA</span>
-            <a href="tel:+1000000000" class="phone">
+            <span className="address">9978 S 84TH TER PALOS HILLS</span>
+            <span className="address">IL 60465-8202 USA</span>
+            <a href="tel:+1000000000" className="phone">
               +1 000 000 000
             </a>
-            <a href="mailto:littlelemon@restaurant.com" class="email">
+            <a href="mailto:littlelemon@restaurant.com" className="email">
               littlelemon@restaurant.com
             </a>
           </div>

@@ -6,32 +6,50 @@ const NavigationLinks = () => {
     <div className="links">
       <ul>
         <li>
-          <NavLink to="/" activeClassName="active">
+          <NavLink
+            to="/"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" activeClassName="active">
+          <NavLink
+            to="/about"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             About
           </NavLink>
         </li>
         <li>
-          <NavLink to="/menu" activeClassName="active">
+          <NavLink
+            to="/menu"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Menu
           </NavLink>
         </li>
         <li>
-          <NavLink to="/reservations" activeClassName="active">
+          <NavLink
+            to="/reservations"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Reservations
           </NavLink>
         </li>
         <li>
-          <NavLink to="/orders" activeClassName="active">
+          <NavLink
+            to="/orders"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Order Online
           </NavLink>
         </li>
         <li>
-          <NavLink to="/login" activeClassName="active">
+          <NavLink
+            to="/login"
+            className={({ isActive }) => (isActive ? "active" : "")}
+          >
             Login
           </NavLink>
         </li>
