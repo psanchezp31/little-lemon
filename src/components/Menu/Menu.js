@@ -1,5 +1,5 @@
 const Menu = () => {
-  return <div>holaa</div>;
+  return <div>This is Little Lemon's Menu page.</div>;
 };
 
 export default Menu;

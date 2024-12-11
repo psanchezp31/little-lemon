@@ -1,5 +1,5 @@
 const Login = () => {
-  return <div>holaa</div>;
+  return <div>This is Little Lemon's Login page.</div>;
 };
 
 export default Login;
